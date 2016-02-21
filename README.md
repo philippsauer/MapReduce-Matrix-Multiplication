@@ -9,6 +9,7 @@ Im Folgenden werden Matrix A (2x3) und Matrix B (3x4) zu Matrix C (2x4) über de
 ```python mapper1.py 2 3 4 99 | python reducer1.py | python mapper2.py | python reducer2.py```
 
 Das Äquivalent für die Ausführung des One-Pass-Algorithmus lautet folgendermaßen:
+
 ```python mapper.py 2 3 4 99 | python reducer.py``` 
 
 In beiden Varianten wird die errechnete Matrix C in Key-Value Paaren ausgegeben. Wobei der Key jeweils die Koordinaten in Matrix C darstellt. Der Value stellt den eigentlichen Wert des im Key adressierten Feldes a_ij bzw b_ij dar. Beispielhaft sei das Ergebnis einer (2x4)-Matrix dargestellt:
